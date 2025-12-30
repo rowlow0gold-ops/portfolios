@@ -1,0 +1,52 @@
+#view .page {
+  width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+#view .card {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+#view .h1 {
+  margin: 0 0 14px;
+  letter-spacing: 0.12em;
+  text-transform: lowercase;
+}
+
+#view .apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+#view .app-card {
+  display: block;
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+#view .app-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+#view .app-title {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#view .app-desc {
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: 0.65;
+}
