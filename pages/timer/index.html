@@ -1,0 +1,42 @@
+<section class="page">
+  <div class="card">
+    <h1 class="h1">timer</h1>
+
+    <div class="display" id="display">05:00</div>
+
+    <div class="grid2">
+      <label>
+        <span class="label">Min</span>
+        <input
+          id="minInput"
+          class="input"
+          type="number"
+          min="0"
+          max="999"
+          value="5"
+        />
+      </label>
+      <label>
+        <span class="label">Sec</span>
+        <input
+          id="secInput"
+          class="input"
+          type="number"
+          min="0"
+          max="59"
+          value="0"
+        />
+      </label>
+    </div>
+
+    <div class="row">
+      <button id="startBtn" class="btn btn--primary" type="button">
+        Start
+      </button>
+      <button id="pauseBtn" class="btn" type="button" disabled>Pause</button>
+      <button id="resetBtn" class="btn" type="button">Reset</button>
+    </div>
+
+    <p class="hint" id="hint">Set time and press Start.</p>
+  </div>
+</section>

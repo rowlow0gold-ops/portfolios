@@ -1,0 +1,88 @@
+#view .page {
+  width: min(560px, 100%);
+  margin: 0 auto;
+}
+
+#view .card {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+#view .h1 {
+  margin: 0 0 10px;
+  letter-spacing: 0.12em;
+  text-transform: lowercase;
+}
+
+#view .display {
+  font-variant-numeric: tabular-nums;
+  font-size: 46px;
+  letter-spacing: 0.06em;
+  padding: 14px 10px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+#view .grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+#view .label {
+  display: block;
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+
+#view .input {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.92);
+  outline: none;
+}
+
+#view .row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#view .btn {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+#view .btn--primary {
+  background: #fff;
+  color: #0b0b10;
+  border-color: transparent;
+}
+
+#view .btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+#view .hint {
+  margin: 12px 0 0;
+  font-size: 13px;
+  opacity: 0.7;
+  text-align: center;
+}

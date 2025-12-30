@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JJ — Mini Apps</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a class="brand" href="#/home">portfolios</a>
+
+        <nav class="tabs">
+          <a class="tab" href="#/home" data-route="home">Home</a>
+
+          <div class="tab tab--dropdown" data-route="apps">
+            <span class="tab__trigger">Apps ▾</span>
+            <div class="tab__menu">
+              <a class="tab__item" href="#/todos" data-route="todos">Todos</a>
+              <a class="tab__item" href="#/timer" data-route="timer">Timer</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Router will render page HTML here -->
+      <div id="view"></div>
+    </main>
+
+    <footer class="footer">© <span id="year"></span> JJ</footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

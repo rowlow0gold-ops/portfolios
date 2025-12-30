@@ -1,0 +1,56 @@
+#view .page {
+  display: grid;
+  place-items: center;
+}
+
+#view .card {
+  width: min(760px, 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+}
+
+#view .title {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  letter-spacing: -0.02em;
+}
+
+#view .subtitle {
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 16px;
+}
+
+#view .accent {
+  background: linear-gradient(120deg, #7dd3fc, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+}
+
+#view .actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#view .btn {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+#view .btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
